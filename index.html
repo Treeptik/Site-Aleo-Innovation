@@ -22,12 +22,14 @@
 	<!-- JS
   ================================================== -->
    <script type="text/javascript" src="js/jquery.min.js" ></script>
+   <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 <!--[if lt IE 9]>
 <script src="js/modernizr.custom.11889.js" type="text/javascript"></script>
 <![endif]-->
     <!-- HTML5 Shiv events (end)-->
     <script type="text/javascript" src="js/nav-resp.js"></script>
 <script type="text/javascript" src="js/colorize.js"></script>
+<script type="text/javascript" src="js/jquery.timers-1.1.2.js"></script>
 	<!-- Favicons
   ================================================== -->
 	<link rel="shortcut icon" href="images/favicon.ico">
@@ -46,6 +48,12 @@
 <header id="header" class="container">
 <div class="four columns logo"><a href="index.html"><img id="img-logo" src="images/logo.png" alt="logo"></a><br>
 <h4 class="slogan1"> </h4></div>
+<div class="actus three columns">
+	<a href="news.html">
+		<h2>News</h2>
+		<p>CIR 2014<br>les nouveautés</p>
+	</a>
+</div>
 <nav id="nav-wrap" class="twelve columns">
 	<ul id="nav">
 		<li class="current"><a data-description="Bienvenue" href="index.html">Accueil</a>
@@ -68,6 +76,7 @@
 
 		<li><a data-description="Nous trouver"  href="contact.html">Contact</a>
 		</li>
+		<li><a data-description="CIR 2014"  href="news.html">News</a>
 	</ul>
 </nav>
 		<!-- /nav-wrap -->
@@ -270,6 +279,11 @@ contact@aleoinovation.fr<br />
 jQuery(document).ready(function() {
 jQuery('#main-port').jcarousel(), jQuery('#our-clients').jcarousel();
 });
+
+$( ".actus") .everyTime ( 10000, function (){
+$('.actus').effect('shake');
+});
+
 </script>  
 <script type="text/javascript" src="js/yalin-custom.js" ></script>
 
