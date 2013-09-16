@@ -869,6 +869,17 @@ input.btn404 { float:left; margin:1px; padding:8px 12px 9px; }
 	color: #df6f0c;
 }
 
+.headline3 {
+	font-family: 'Oswald','Lato', serif;
+	font-weight: 300;
+	font-size: 1.75rem;
+	color: #fff;
+	padding: 12px 0 0 0;
+	border-top: 1px solid #fa8c33;
+	display: inline;
+	margin-left: 10px;
+}
+
 
 .news-body p {
 	font-size: 1rem;
