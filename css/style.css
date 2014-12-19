@@ -975,6 +975,11 @@ input.btn404 { float:left; margin:1px; padding:8px 12px 9px; }
 	line-height: 24px;
 }
 
+.page-content p strong {
+	font-size: 16px;
+	line-height: 24px;
+}
+
 .page-content .title + p:first-letter {
 	text-transform: uppercase;
 	float: left;
@@ -982,6 +987,10 @@ input.btn404 { float:left; margin:1px; padding:8px 12px 9px; }
 	font-family: Times, serif, Arial;
 	line-height: 42px;
 	margin: 0 8px 0 0;
+}
+
+.page-content li {
+	font-size: 14px;
 }
 
 
